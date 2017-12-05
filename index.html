@@ -310,22 +310,19 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <form action="demandes-contact.php" class="probootstrap-form">
+            <form method="POST" action="mailer.php" class="probootstrap-form">
               <h2 class="text-black mt0">Contactez Nous</h2>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Votre Nom">
+                <input type="text" class="form-control" placeholder="Votre Nom" name="name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Votre emaill">
+                <input type="email" class="form-control" placeholder="Votre email" name="email">
               </div>
               <div class="form-group">
-                <input type="phone" class="form-control" placeholder="Votre numéro de téléphone">
+                <textarea class="form-control" cols="30" rows="10" placeholder="Votre message" name="message"></textarea>
               </div>
               <div class="form-group">
-                <textarea class="form-control" cols="30" rows="10" placeholder="Votre message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-green" value="Envoyer">
+                <input type="submit" class="btn btn-primary btn-green" value="Envoyer" name="submit">
               </div>
             </form>
           </div>
@@ -350,7 +347,6 @@
         </div>
       </div>
     </section>
-
 
     <footer class="probootstrap-footer">
       <div class="container text-center">

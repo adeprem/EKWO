@@ -52,7 +52,7 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: #E60053;
+  color: #A8003D;
   text-decoration: none;
 }
 
@@ -818,7 +818,8 @@ a:hover, a:focus, a:active {
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-  background: #142A12;
+  background: #A8003D;
+  border-color: #A8003D;
 }
 
 .btn.btn-black {
