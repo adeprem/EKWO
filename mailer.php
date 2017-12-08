@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['submit'])) {
 
-$to = "adeprem@vt.edu";
+$to = "info@dgpourpre.fr";
 $subject = "Contact";
 $name_field = $_POST['name'];
 $email_field = $_POST['email'];

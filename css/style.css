@@ -1257,3 +1257,17 @@ a:hover, a:focus, a:active {
     display:inline-block;
     margin: 10px;
   }
+
+
+  @media screen and (max-width: 900px) {
+  .title {
+    text-align: center;
+  }
+}
+
+ @media screen and (min-width: 901px) {
+  .title {
+    text-align: right;
+  }
+}
+
