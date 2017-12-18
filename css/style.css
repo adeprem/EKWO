@@ -673,6 +673,11 @@ a:hover, a:focus, a:active {
     font-size: 30px;
   }
 
+   .probootstrap-charte > a {
+    padding: 10px;
+    font-size: 10px;
+  }
+
   .probootstrap-pricing {
     text-align: center;
     padding: 30px;
