@@ -1264,15 +1264,38 @@ a:hover, a:focus, a:active {
   }
 
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1139px) {
   .title {
     text-align: center;
   }
 }
 
- @media screen and (min-width: 901px) {
+ @media screen and (min-width: 1140px) {
   .title {
     text-align: right;
   }
 }
 
+ @media screen and (max-width: 580px) {
+  .probootstrap-hero .intro-text {
+    padding-top: 300px;
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 770px) {
+  .probootstrap-hero .intro-text {
+    padding-top: 400px;
+  }
+}
+
+@media screen and (min-width: 771px) and (max-width: 1000px) {
+  .probootstrap-hero .intro-text {
+    padding-top: 500px;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1139px) {
+  .probootstrap-hero .intro-text {
+    padding-top: 600px;
+  }
+}
