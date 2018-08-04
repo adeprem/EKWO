@@ -511,7 +511,7 @@ a:hover, a:focus, a:active {
   }
 
   .probootstrap-hero .intro-text .probootstrap-heading {
-    font-size: 54px;
+    font-size: 20px;
     font-weight: 300;
     color: #ffffff;
     margin-bottom: 40px;
@@ -520,7 +520,7 @@ a:hover, a:focus, a:active {
 
   @media screen and (max-width: 768px) {
     .probootstrap-hero .intro-text .probootstrap-heading {
-      font-size: 36px;
+      font-size: 18px;
       text-align: center;
     }
   }
