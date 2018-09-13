@@ -35,7 +35,7 @@
 		$('.probootstrap-animate').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('probootstrap-animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -57,9 +57,9 @@
 							el.removeClass('item-animate');
 						},  k * 100, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '95%' } );
@@ -98,9 +98,9 @@
 		});
 	};
 
-	
-	
-	
+
+
+
 	var stellarInit = function() {
 		if( !isMobile.any() ) {
 			$(window).stellar();
@@ -146,7 +146,7 @@
 	var navigationSection = function() {
 
 		var $section = $('section[data-section]');
-		
+
 		$section.waypoint(function(direction) {
 		  	if (direction === 'down') {
 		    	navActive($(this.element).data('section'));
@@ -176,7 +176,7 @@
 			return false;
 		});
 	};
-	
+
 	var magnificPopupControl = function() {
 
 
