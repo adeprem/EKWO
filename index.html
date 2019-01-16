@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EKWO</title>
   <meta name="description" content="EKWO, l'app au galop. Entraînements sur mesure - Gestion de votre cheval à plusieurs - Suivi de l'actualité équestre">
@@ -23,7 +23,7 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
  fbq('init', '180848999375792');
 fbq('track', 'PageView');
-bq('track', 'ViewContent')
+fbq('track', 'ViewContent')
 </script>
 <noscript>
  <img height="1" width="1"
@@ -367,14 +367,20 @@ src="https://www.facebook.com/tr?id=180848999375792&ev=PageView
       </div>
     </section>
 
+    <!-- Code pour le php du formulaire de contact -->
+      <?php
+      include("contact-form.php"); // on appelle le fichier
+      ?>
+
+
     <section class="probootstrap-section probootstrap-bg-light" data-section="contact">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-md-6">
-            <form method="POST" action="mailer.php" class="probootstrap-form">
+            <form method="POST" action="<?php echo strip_tags($_SERVER['REQUEST_URI']); ?>" class="probootstrap-form">
               <h2 class="text-black mt0">Contactez Nous</h2>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Votre Nom" name="name">
+                <input type="text" class="form-control" placeholder="Votre Nom" name="nom">
               </div>
               <div class="form-group">
                 <input type="email" class="form-control" placeholder="Votre email" name="email">
@@ -383,7 +389,7 @@ src="https://www.facebook.com/tr?id=180848999375792&ev=PageView
                 <textarea class="form-control" cols="30" rows="10" placeholder="Votre message" name="message"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-green" value="Envoyer" name="submit">
+                <input type="submit" class="btn btn-primary btn-green" value="Envoyer" name="submit"/>
               </div>
             </form>
           </div>
@@ -400,7 +406,7 @@ src="https://www.facebook.com/tr?id=180848999375792&ev=PageView
               <li>
                 <span class="text-uppercase">A propos</span>
                 Application dévelopée par la société Digitale Pourpre <br>
-                <a href="https://dgpourpre.wixsite.com/digitalepourpre" target="_blank">En savoir plus</a>
+                <a href="http://www.dgpourpre.fr" target="_blank">En savoir plus</a>
               </li>
             </ul>
           </div>
