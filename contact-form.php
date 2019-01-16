@@ -7,7 +7,7 @@
     $to = 'adeprem@vt.edu';
     $subject = 'Formulaire de contact';
 
-    $body = "From: $name\n E-Mail: $email\n Message:\n $message";
+    $body = 'From: $name"\n" E-Mail: $email "\n" Message: "\n" $message';
 
     if ($_POST['submit']) {
       if (mail($to, $subject, $body, $from)) {
