@@ -8,7 +8,7 @@
     $subject = 'Formulaire de contact';
 
     // $body = "From: $name E-Mail: $email Message: $message";
-    $body = 'From: '.$name."\r\n".'E-mail: '.$email."\r\n".'Message'.$message;
+    $body = 'From: '.$name."<br>".'E-mail: '.$email."<br>".'Message:'.$message;
 
 
     if ($_POST['submit']) {
