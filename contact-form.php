@@ -12,7 +12,7 @@
 
 
     if ($_POST['submit']) {
-      if (mail($to, $subject, $body, $from)) {
+      if (mail(string $to, string $subject, string $body, string $from)) {
         echo '<p>Your message has been sent!</p>';
       }
       else {
