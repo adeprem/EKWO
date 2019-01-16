@@ -10,6 +10,7 @@
     $body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
     if ($_POST['submit']) {
+      echo '<p>step 1 success</p>';
       if (mail ($to, $subject, $body, $from)) {
         echo '<p>Your message has been sent!</p>';
       }
