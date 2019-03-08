@@ -1299,3 +1299,17 @@ a:hover, a:focus, a:active {
     padding-top: 600px;
   }
 }
+
+
+#temoignage {
+  background-color: #247BA0;
+  height: 50%;
+  color: black;
+  padding: 40px;
+  box-shadow: 10px 40px 100px -10px rgba(0, 0, 0, 0.81);
+  border: 1px solid #247BA0;
+}
+
+#faq_cards {
+  height: 400px;
+}
